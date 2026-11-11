@@ -2,28 +2,28 @@ import { siteConfig } from '../config/site';
 
 export const servicesData = [
   {
-    id: 'sports-massage',
+    id: 'massage',
     number: '01',
     category: 'massage',
     featured: true,
-    image: '/assets/services/sports-massage.webp',
-    imageFallback: '/assets/services/sports-massage.jpg',
-    icon: 'activity',
+    image: '/assets/services/massage-general.webp',
+    imageFallback: '/assets/services/massage-general.jpg',
+    icon: 'heart-handshake',
     title: {
-      ar: 'تدليك رياضي',
-      en: 'Sports Massage',
+      ar: 'التدليك',
+      en: 'Therapeutic Massage',
     },
     shortDesc: {
-      ar: 'تدليك للعضلات يساعد على تخفيف الشد والإجهاد العضلي.',
-      en: 'Muscle massage that helps relieve tension and muscle fatigue.',
+      ar: 'جلسة تدليك متكاملة تساعد على إرخاء الجسم وتهدئة التوتر العضلي اليومي.',
+      en: 'A full-body massage session designed to relax muscles and ease daily tension.',
     },
     details: {
-      ar: 'جلسة مركّزة تستهدف المجموعات العضلية المجهدة بأساليب ضغط وتمديد مدروسة، مناسبة للرياضيين وأصحاب المجهود البدني اليومي لاستعادة مرونة العضلات والراحة الحركية.',
-      en: 'A targeted session focusing on fatigued muscle groups through controlled pressure and stretching techniques, ideal for active individuals seeking muscular recovery and comfort.',
+      ar: 'جلسة عناية متكاملة بحركات انسيابية متناغمة تساعد على تهدئة الجهاز العصبي، إرخاء العضلات المجهدة، ومنح الجسم شعوراً بالسكينة والنشاط المتجدد.',
+      en: 'A soothing full-body massage using flowing, harmonious strokes to calm the nervous system, relax tired muscles, and leave you feeling refreshed and balanced.',
     },
     tags: {
-      ar: ['تخفيف الشد العضلي', 'استشفاء حركي', 'عناية مخصصة'],
-      en: ['Muscle Tension Relief', 'Active Recovery', 'Tailored Care'],
+      ar: ['استرخاء شامل', 'تهدئة التوتر', 'عناية بالجسم'],
+      en: ['Full Relaxation', 'Stress Relief', 'Body Care'],
     },
   },
   {
@@ -35,12 +35,12 @@ export const servicesData = [
     imageFallback: '/assets/services/fire-cupping.jpg',
     icon: 'flame',
     title: {
-      ar: 'كاسات ناريه',
+      ar: 'كاسات النارية',
       en: 'Fire Cupping',
     },
     shortDesc: {
-      ar: 'استخدام كاسات حرارية للمساعدة على الاسترخاء.',
-      en: 'Thermal cupping to help promote relaxation.',
+      ar: 'استخدام كاسات حرارية للمساعدة على الاسترخاء وتخفيف الشد العضلي.',
+      en: 'Thermal cupping therapy to help soothe tight tissues and promote deep relaxation.',
     },
     details: {
       ar: 'تطبيق الكاسات الزجاجية الدافئة وفق أصول العناية التقليدية لتوليد شفط لطيف يساعد على تهدئة الأنسجة المشدودة وتحفيز الشعور بالدفء والاسترخاء العميق.',
@@ -52,170 +52,70 @@ export const servicesData = [
     },
   },
   {
-    id: 'acupuncture',
+    id: 'cupping',
     number: '03',
     category: 'cupping',
     featured: true,
-    image: '/assets/services/acupuncture.webp',
-    imageFallback: '/assets/services/acupuncture.jpg',
-    icon: 'sparkles',
+    image: '/assets/services/cupping.webp',
+    imageFallback: '/assets/services/cupping.jpg',
+    icon: 'circle-dot',
     title: {
-      ar: 'إبر صينية',
-      en: 'Chinese Acupuncture',
+      ar: 'كاسات الهواء',
+      en: 'Air Cupping',
     },
     shortDesc: {
-      ar: 'استخدام إبر دقيقة في نقاط محددة من الجسم.',
-      en: 'Fine needles applied at specific points of the body.',
+      ar: 'جلسات كاسات هوائية لتخفيف الشد العضلي وتنشيط التروية الموضعية.',
+      en: 'Dry air suction cupping sessions to ease muscle tightness and support local circulation.',
     },
     details: {
-      ar: 'جلسة هادئة تعتمد على وضع إبر دقيقة للغاية ومعقمة في مسارات ونقاط محددة من الجسم حسب تقييم الحالة لدعم التوازن الطبيعي وتخفيف التوتر العضلي.',
-      en: 'A calm, precise session using ultra-fine sterile needles placed at specific anatomical points according to your assessment to support balance and ease tension.',
+      ar: 'استخدام كاسات هوائية مخصصة بدرجات شفط مدروسة تناسب طبيعة كل جسم، للمساعدة على إرخاء الأنسجة المشدودة في الظهر والكتفين وتعزيز الشعور بالراحة.',
+      en: 'Application of specialized air cups with controlled suction tailored to your comfort level, helping loosen tight back and shoulder tissues.',
     },
     tags: {
-      ar: ['نقاط محددة', 'إبر دقيقة معقمة', 'توازن الجسم'],
-      en: ['Targeted Points', 'Fine Sterile Needles', 'Body Balance'],
+      ar: ['شفط هوائي متوازن', 'تخفيف الشد', 'تروية موضعية'],
+      en: ['Controlled Air Suction', 'Tension Relief', 'Local Circulation'],
     },
   },
   {
-    id: 'sliding-cupping',
+    id: 'sports-massage',
     number: '04',
-    category: 'cupping',
-    featured: true,
-    image: '/assets/services/sliding-cupping.webp',
-    imageFallback: '/assets/services/sliding-cupping.jpg',
-    icon: 'droplets',
-    title: {
-      ar: 'حجامة متزحلقة',
-      en: 'Sliding Cupping',
-    },
-    shortDesc: {
-      ar: 'تحريك كاسات الحجامة على الجلد باستخدام زيت مناسب.',
-      en: 'Gliding cups moved over the skin with a suitable oil.',
-    },
-    details: {
-      ar: 'تقنية تجمع بين فوائد الكاسات والانزلاق الانسيابي على مسارات الظهر والعضلات مع زيوت طبيعية مريحة، مما يمنح إحساساً مضاعفاً بالخفة وتفكيك عقد التوتر.',
-      en: 'Combines gentle cupping suction with smooth gliding movements across muscle pathways using skin-friendly oils to release surface tightness and refresh the body.',
-    },
-    tags: {
-      ar: ['انزلاق بالزيت', 'تنشيط التروية', 'مرونة الأنسجة'],
-      en: ['Oil Gliding', 'Circulation Support', 'Tissue Mobility'],
-    },
-  },
-  {
-    id: 'sports-shiatsu',
-    number: '05',
     category: 'massage',
     featured: true,
-    image: '/assets/services/sports-shiatsu.webp',
-    imageFallback: '/assets/services/sports-shiatsu.jpg',
-    icon: 'hand',
+    image: '/assets/services/sports-massage.webp',
+    imageFallback: '/assets/services/sports-massage.jpg',
+    icon: 'activity',
     title: {
-      ar: 'شياتسو رياضي',
-      en: 'Sports Shiatsu',
+      ar: 'التدليك الرياضي',
+      en: 'Sports Massage',
     },
     shortDesc: {
-      ar: 'ضغط يدوي على نقاط محددة في الجسم لتخفيف الشد العضلي والاسترخاء.',
-      en: 'Manual pressure on specific points to ease muscle tension and relax.',
+      ar: 'تدليك للعضلات يساعد على تخفيف الشد والإجهاد العضلي واستعادة المرونة.',
+      en: 'Targeted muscle massage that helps relieve tension, soreness, and muscle fatigue.',
     },
     details: {
-      ar: 'يعتمد على ضغط الأصابع وراحة اليد بإيقاع متوازن على نقاط الارتكاز العضلية لتخفيف التيبّس الناتج عن الجهد البدني أو الجلوس الطويل واستعادة الحيوية.',
-      en: 'Uses rhythmic finger and palm pressure along key muscular puntos to ease stiffness from physical training or prolonged posture and restore natural vitality.',
+      ar: 'جلسة مركّزة تستهدف المجموعات العضلية المجهدة بأساليب ضغط وتمديد مدروسة، مناسبة للرياضيين وأصحاب المجهود البدني اليومي لاستعادة مرونة العضلات والراحة الحركية.',
+      en: 'A targeted session focusing on fatigued muscle groups through controlled pressure and stretching techniques, ideal for active individuals seeking muscular recovery and comfort.',
     },
     tags: {
-      ar: ['ضغط يدوي', 'نقاط الارتكاز', 'تخفيف الإجهاد'],
-      en: ['Manual Pressure', 'Trigger Points', 'Fatigue Relief'],
-    },
-  },
-  {
-    id: 'joint-correction',
-    number: '06',
-    category: 'massage',
-    featured: true,
-    image: '/assets/services/joint-correction.webp',
-    imageFallback: '/assets/services/joint-correction.jpg',
-    icon: 'bone',
-    title: {
-      ar: 'براكتك تصحيح المفاصل',
-      en: 'Joint Correction Practice',
-    },
-    shortDesc: {
-      ar: 'تقنيات يدوية لتحسين حركة المفاصل حسب الحالة.',
-      en: 'Manual techniques to improve joint movement according to the case.',
-    },
-    details: {
-      ar: 'تطبيق تقنيات تحريك يدوية مدروسة ولطيفة تهدف إلى دعم المدى الحركي الطبيعي للمفاصل وتقليل الشعور بالتيبّس، وتُحدد خطواتها بدقة بعد تقييم احتياج الجسم.',
-      en: 'Carefully controlled manual mobilization techniques designed to support natural joint range of motion and reduce stiffness, tailored individually after assessment.',
-    },
-    tags: {
-      ar: ['مرونة المفاصل', 'تقنيات يدوية', 'حسب الحالة'],
-      en: ['Joint Mobility', 'Manual Techniques', 'Condition-Based'],
-    },
-  },
-  {
-    id: 'massage',
-    number: '07',
-    category: 'massage',
-    featured: false,
-    image: '/assets/services/massage-general.webp',
-    imageFallback: '/assets/services/massage-general.jpg',
-    icon: 'heart-handshake',
-    title: {
-      ar: 'تدليك',
-      en: 'Massage',
-    },
-    shortDesc: {
-      ar: 'جلسة تدليك متكاملة تساعد على إرخاء الجسم وتهدئة التوتر اليومي.',
-      en: 'A full-body massage session designed to relax muscles and ease daily stress.',
-    },
-    details: {
-      ar: 'جلسة عناية كلاسيكية بحركات انسيابية متناغمة تساعد على تهدئة الجهاز العصبي، إرخاء العضلات المجهدة، ومنح الجسم شعوراً بالسكينة والنشاط المتجدد.',
-      en: 'A soothing classic massage using flowing, harmonious strokes to calm the nervous system, relax tired muscles, and leave you feeling refreshed and balanced.',
-    },
-    tags: {
-      ar: ['استرخاء شامل', 'تهدئة التوتر', 'عناية بالجسم'],
-      en: ['Full Relaxation', 'Stress Relief', 'Body Care'],
-    },
-  },
-  {
-    id: 'ayurveda',
-    number: '08',
-    category: 'spa',
-    featured: false,
-    image: '/assets/services/ayurveda.webp',
-    imageFallback: '/assets/services/ayurveda.jpg',
-    icon: 'leaf',
-    title: {
-      ar: 'أيورفيدا',
-      en: 'Ayurveda',
-    },
-    shortDesc: {
-      ar: 'عناية استرخائية مستوحاة من التقاليد الهندية باستخدام الزيوت الدافئة.',
-      en: 'Holistic relaxation inspired by traditional Ayurvedic warm-oil care.',
-    },
-    details: {
-      ar: 'تجربة هادئة تعتمد على مسارات التدليك الانسيابي بالزيوت الدافئة لتعزيز الانسجام بين الجسد والذهن وترطيب البشرة بعمق في أجواء باعثة على السكينة.',
-      en: 'A serene ritual utilizing warm aromatic oils and rhythmic strokes to nurture mind-body harmony, deeply hydrate the skin, and encourage peaceful stillness.',
-    },
-    tags: {
-      ar: ['زيوت دافئة', 'صفاء الذهن', 'توازن تقليدي'],
-      en: ['Warm Oils', 'Mental Clarity', 'Holistic Balance'],
+      ar: ['تخفيف الشد العضلي', 'استشفاء حركي', 'عناية مخصصة'],
+      en: ['Muscle Tension Relief', 'Active Recovery', 'Tailored Care'],
     },
   },
   {
     id: 'reflexology',
-    number: '09',
-    category: 'massage',
-    featured: false,
+    number: '05',
+    category: 'foot',
+    featured: true,
     image: '/assets/services/reflexology.webp',
     imageFallback: '/assets/services/reflexology.jpg',
     icon: 'footprints',
     title: {
-      ar: 'ريفلكسولوجي',
+      ar: 'الرفلكسولوجي',
       en: 'Reflexology',
     },
     shortDesc: {
-      ar: 'تحفيز نقاط الانعكاس في القدمين واليدين لدعم الاسترخاء العام.',
-      en: 'Stimulating reflex points on the feet and hands to support overall relaxation.',
+      ar: 'تحفيز نقاط الانعكاس في القدمين واليدين لدعم الاسترخاء العام وتوازن الجسم.',
+      en: 'Stimulating reflex points on the feet and hands to support overall relaxation and balance.',
     },
     details: {
       ar: 'جلسة دقيقة تركز على نقاط الانعكاس العصبي في باطن القدمين لتخفيف ثقل الوقوف والمشي الطويل ومساعدة الجسم بأكمله على الشعور بالراحة والاتزان.',
@@ -227,85 +127,10 @@ export const servicesData = [
     },
   },
   {
-    id: 'shiatsu',
-    number: '10',
-    category: 'massage',
-    featured: false,
-    image: '/assets/services/shiatsu.webp',
-    imageFallback: '/assets/services/shiatsu.jpg',
-    icon: 'compass',
-    title: {
-      ar: 'سيتاتشو',
-      en: 'Shiatsu',
-    },
-    shortDesc: {
-      ar: 'أسلوب ضغط نقطي متوازن يساعد على تحرير التوتر واستعادة حيوية الجسم.',
-      en: 'Balanced point-pressure technique that helps release tension and restore vitality.',
-    },
-    details: {
-      ar: 'تقنية ضغط يدوي متدرج على مسارات الطاقة والعضلات بدون الحاجة إلى زيوت كثيفة، تهدف إلى تخفيف التيبّس العضلي وتحقيق استرخاء عميق ومتوازن.',
-      en: 'Gradual manual pressure applied along muscular pathways to release accumulated stiffness and encourage a grounded, deeply relaxed state.',
-    },
-    tags: {
-      ar: ['ضغط متدرج', 'مسارات الجسم', 'تخفيف التيبّس'],
-      en: ['Rhythmic Pressure', 'Body Pathways', 'Stiffness Relief'],
-    },
-  },
-  {
-    id: 'cupping',
-    number: '11',
-    category: 'cupping',
-    featured: false,
-    image: '/assets/services/cupping.webp',
-    imageFallback: '/assets/services/cupping.jpg',
-    icon: 'circle-dot',
-    title: {
-      ar: 'كاسات',
-      en: 'Cupping',
-    },
-    shortDesc: {
-      ar: 'جلسات كاسات هوائية لتخفيف الشد العضلي وتنشيط التروية الموضعية.',
-      en: 'Suction cupping sessions to ease muscle tightness and support local circulation.',
-    },
-    details: {
-      ar: 'استخدام كاسات مخصصة بدرجات شفط مدروسة تناسب طبيعة كل جسم، للمساعدة على إرخاء الأنسجة المشدودة في الظهر والكتفين وتعزيز الشعور بالراحة.',
-      en: 'Application of specialized cups with controlled suction tailored to your comfort level, helping loosen tight back and shoulder tissues.',
-    },
-    tags: {
-      ar: ['كاسات مخصصة', 'تخفيف الشد', 'تروية موضعية'],
-      en: ['Controlled Suction', 'Tension Relief', 'Local Circulation'],
-    },
-  },
-  {
-    id: 'chiropractic',
-    number: '12',
-    category: 'massage',
-    featured: false,
-    image: '/assets/services/chiropractic.webp',
-    imageFallback: '/assets/services/chiropractic.jpg',
-    icon: 'align-center',
-    title: {
-      ar: 'الكيروبراكتك',
-      en: 'Chiropractic',
-    },
-    shortDesc: {
-      ar: 'عناية يدوية تركز على محاذاة القوام وحركة العمود الفقري والمفاصل.',
-      en: 'Manual care focusing on postural alignment and spinal and joint mobility.',
-    },
-    details: {
-      ar: 'جلسة تعتمد على التقييم الحركي وتطبيق أساليب يدوية مخصصة لدعم استقامة القوام وتخفيف الإجهاد الميكانيكي على الظهر والرقبة والمفاصل.',
-      en: 'Assessment-guided manual care aimed at supporting healthy posture, easing mechanical strain on the neck and back, and improving movement comfort.',
-    },
-    tags: {
-      ar: ['توازن القوام', 'عناية بالظهر', 'حركة مرنة'],
-      en: ['Postural Balance', 'Back Care', 'Smooth Mobility'],
-    },
-  },
-  {
     id: 'foot-care',
-    number: '13',
-    category: 'spa',
-    featured: false,
+    number: '06',
+    category: 'foot',
+    featured: true,
     image: '/assets/services/foot-care.webp',
     imageFallback: '/assets/services/foot-care.jpg',
     icon: 'feather',
@@ -314,8 +139,8 @@ export const servicesData = [
       en: 'Foot Care',
     },
     shortDesc: {
-      ar: 'جلسة عناية مريحة للقدمين لتخفيف الإجهاد والعناية بنعومة الجلد.',
-      en: 'Soothing foot care session to relieve fatigue and maintain soft, healthy skin.',
+      ar: 'جلسة عناية مريحة للقدمين لتخفيف الإجهاد واستعادة الخفة والانتعاش.',
+      en: 'Soothing foot care session to relieve fatigue and restore lightness and comfort.',
     },
     details: {
       ar: 'عناية مخصصة للقدمين تشمل النقع الدافئ والتدليك المريح والترطيب لتخفيف آثار التعب اليومي ومنح القدمين إحساساً فورياً بالانتعاش والخفة.',
@@ -327,103 +152,53 @@ export const servicesData = [
     },
   },
   {
-    id: 'hot-stones',
-    number: '14',
-    category: 'spa',
-    featured: false,
-    image: '/assets/services/hot-stones.webp',
-    imageFallback: '/assets/services/hot-stones.jpg',
-    icon: 'gem',
-    title: {
-      ar: 'أحجار ساخنة',
-      en: 'Hot Stone Massage',
-    },
-    shortDesc: {
-      ar: 'تدليك باستخدام أحجار البازلت الدافئة لإرخاء العضلات بعمق.',
-      en: 'Massage with smooth, heated basalt stones for deep muscular relaxation.',
-    },
-    details: {
-      ar: 'توضع أحجار طبيعية ملساء بدرجة حرارة دافئة ومريحة على نقاط مختارة من الجسم مع تدليك انسيابي، حيث يتغلغل الدفء لتهدئة الشد العضلي ومنح استرخاء عميق.',
-      en: 'Smooth, comfortably heated natural stones are placed on key points and glided with oil, allowing gentle warmth to melt away tightness and induce calm.',
-    },
-    tags: {
-      ar: ['أحجار دافئة', 'دفء عميق', 'هدوء الأعصاب'],
-      en: ['Warm Basalt Stones', 'Soothing Heat', 'Deep Calm'],
-    },
-  },
-  {
-    id: 'exercises',
-    number: '15',
-    category: 'fitness',
-    featured: false,
-    image: '/assets/services/exercises.webp',
-    imageFallback: '/assets/services/exercises.jpg',
-    icon: 'stretch-horizontal',
-    title: {
-      ar: 'تمارين',
-      en: 'Exercises',
-    },
-    shortDesc: {
-      ar: 'تمارين حركية وإطالات موجهة لتحسين المرونة ودعم الحركة اليومية.',
-      en: 'Guided mobility and stretching exercises to improve flexibility and daily movement.',
-    },
-    details: {
-      ar: 'تمارين إطالة وحركة موجهة تناسب قدرات كل شخص واحتياج جسمه، تساعد على تقليل التيبّس العضلي ودعم سلاسة الحركة بعد الجلسات أو ضمن برنامج العناية.',
-      en: 'Guided stretching and mobility routines tailored to your individual pace, helping reduce stiffness and maintain supple, comfortable movement.',
-    },
-    tags: {
-      ar: ['إطالات موجهة', 'تحسين المرونة', 'نشاط متوازن'],
-      en: ['Guided Stretching', 'Flexibility', 'Balanced Activity'],
-    },
-  },
-  {
-    id: 'fitness',
-    number: '16',
-    category: 'fitness',
-    featured: false,
-    image: '/assets/services/fitness.webp',
-    imageFallback: '/assets/services/fitness.jpg',
-    icon: 'dumbbell',
-    title: {
-      ar: 'لياقة',
-      en: 'Fitness',
-    },
-    shortDesc: {
-      ar: 'برامج تنشيط بدني متوازنة لدعم الحيوية والنشاط العام للجسم.',
-      en: 'Balanced physical conditioning sessions to support overall vitality and wellness.',
-    },
-    tags: {
-      ar: ['تنشيط بدني', 'حيوية الجسم', 'توازن حركي'],
-      en: ['Physical Vitality', 'Conditioning', 'Active Balance'],
-    },
-    details: {
-      ar: 'جلسات نشاط بدني مدروسة تهدف إلى تعزيز اللياقة العامة وتنشيط الدورة الدموية ودعم التوازن الحركي بما يتناسب مع الحالة البدنية لكل زائر.',
-      en: 'Thoughtfully paced conditioning sessions aimed at boosting general vitality, circulation, and physical balance in accordance with your condition.',
-    },
-  },
-  {
-    id: 'moroccan-bath',
-    number: '17',
-    category: 'spa',
+    id: 'joint-correction',
+    number: '07',
+    category: 'massage',
     featured: true,
-    image: '/assets/services/moroccan-bath.webp',
-    imageFallback: '/assets/services/moroccan-bath.jpg',
-    icon: 'sparkles',
+    image: '/assets/services/joint-correction.webp',
+    imageFallback: '/assets/services/joint-correction.jpg',
+    icon: 'bone',
     title: {
-      ar: 'الحمام المغربي',
-      en: 'Moroccan Bath',
+      ar: 'براكتك رياضي',
+      en: 'Sports Practice & Joint Care',
     },
     shortDesc: {
-      ar: 'جلسة عناية تقليدية بالبخار والصابون المغربي لتنظيف البشرة وتجديد حيويتها.',
-      en: 'Traditional steam and Moroccan black-soap ritual to cleanse, exfoliate, and refresh the skin.',
+      ar: 'تقنيات يدوية رياضية لتحسين حركة المفاصل وتخفيف التيبّس حسب الحالة.',
+      en: 'Manual sports practice techniques to improve joint mobility and alignment according to the case.',
     },
     details: {
-      ar: 'طقس استرخائي أصيل يجمع بين البخار الدافئ والصابون المغربي والتقشير اللطيف لإزالة خلايا الجلد الميتة، تفتيح المسامات، ومنح البشرة نعومة وإشراقاً طبيعياً.',
-      en: 'An authentic spa ritual combining warm steam, traditional Moroccan soap, and gentle exfoliation to remove dead skin cells, clear pores, and leave skin silky soft.',
+      ar: 'تطبيق تقنيات تحريك يدوية رياضية مدروسة ولطيفة تهدف إلى دعم المدى الحركي الطبيعي للمفاصل والظهر وتقليل الشعور بالتيبّس، وتُحدد خطواتها بدقة بعد تقييم احتياج الجسم.',
+      en: 'Carefully controlled manual sports mobilization techniques designed to support natural joint range of motion and reduce stiffness, tailored individually after assessment.',
     },
     tags: {
-      ar: ['تقشير وتجديد', 'بخار دافئ', 'نعومة البشرة'],
-      en: ['Exfoliation & Renewal', 'Warm Steam', 'Silky Skin'],
+      ar: ['مرونة المفاصل', 'براكتك يدوي', 'حسب الحالة'],
+      en: ['Joint Mobility', 'Manual Practice', 'Condition-Based'],
+    },
+  },
+  {
+    id: 'sports-shiatsu',
+    number: '08',
+    category: 'massage',
+    featured: true,
+    image: '/assets/services/sports-shiatsu.webp',
+    imageFallback: '/assets/services/sports-shiatsu.jpg',
+    icon: 'hand',
+    title: {
+      ar: 'سيتاتشو تدليك عميق للعضلات والمفاصل',
+      en: 'Deep Muscle & Joint Shiatsu',
+    },
+    shortDesc: {
+      ar: 'ضغط يدوي عميق ومباشر على نقاط العضلات والمفاصل لتخفيف الشد العضلي المزمن والاسترخاء.',
+      en: 'Deep manual point-pressure targeting muscles and joints to release deep-seated tension.',
+    },
+    details: {
+      ar: 'يعتمد على ضغط الأصابع وراحة اليد بعمق وإيقاع متوازن على مسارات العضلات والمفاصل لتفكيك عقد التوتر العميقة وتخفيف التيبّس الناتج عن المجهود البدني أو الجلوس الطويل.',
+      en: 'Uses deep, rhythmic finger and palm pressure along key muscular pathways and around joints to release stubborn knots, ease stiffness, and restore natural mobility.',
+    },
+    tags: {
+      ar: ['تدليك عميق', 'العضلات والمفاصل', 'تخفيف التيبّس'],
+      en: ['Deep Tissue Pressure', 'Muscles & Joints', 'Stiffness Relief'],
     },
   },
 ];
@@ -669,7 +444,7 @@ export const translations = {
       headlinePart1: 'صحتك .. توازنك',
       headlinePart2: 'جسمك يستحق العناية',
       subtitle:
-        'وجهتك المتخصصة للتدليك الصحي والعناية المتكاملة بالجسد في الرياض. الجلسات تُحدد بعناية حسب الحالة واحتياج الجسم داخل بيئة هادئة وراقية.',
+        'وجهتك المتخصصة للتدليك الصحي والعناية المتكاملة بالعضلات والمفاصل في الرياض. الجلسات تُحدد بعناية حسب الحالة واحتياج الجسم داخل بيئة هادئة وراقية.',
       posterSlogan: siteConfig.brand.posterSloganAr,
       primaryCta: 'احجز عبر واتساب',
       secondaryCta: 'استكشف الخدمات',
@@ -680,8 +455,8 @@ export const translations = {
           desc: 'تُحدد حسب الحالة واحتياج الجسم',
         },
         {
-          title: '17 خدمة متكاملة',
-          desc: 'تدليك، كاسات، إبر صينية، وحمام مغربي',
+          title: '8 خدمات متخصصة',
+          desc: 'تدليك، كاسات نارية وهواء، شياتسو، وبراكتك رياضي',
         },
         {
           title: 'مفتوح دائماً 24/7',
@@ -696,7 +471,7 @@ export const translations = {
       title: 'مساحة هادئة تجمع بين العناية المتخصصة والرفاهية الأصيلة',
       lead: 'في مركز ترو سيرف للتدليك الصحي بحي ظهرة لبن في الرياض، نؤمن بأن كل جسم له احتياجه الخاص؛ لذلك لا نقدّم قوالب جاهزة، بل نحدد كل جلسة بعناية حسب حالتك.',
       paragraph1:
-        'يجمع مركزنا بين أساليب التدليك العلاجي والرياضي، تقنيات الكاسات النارية والحجامة المتزحلقة، الإبر الصينية، الشياتسو، وتصحيح حركة المفاصل، إلى جانب طقوس الاسترخاء والعناية كالحمام المغربي والأحجار الساخنة والأيورفيدا.',
+        'يركّز مركزنا على أساليب التدليك المتكامل والتدليك الرياضي، كاسات النارية وكاسات الهواء، سيتاتشو التدليك العميق للعضلات والمفاصل، البراكتك الرياضي، وجلسات الرفلكسولوجي والعناية بالقدمين.',
       paragraph2:
         'صُمّمت مرافق المركز وصالات الاستقبال لتمنحك شعوراً فورياً بالسكينة والخصوصية منذ لحظة وصولك، مع التزامنا التام بالنظافة والاهتمام بأدق التفاصيل على مدار الساعة (24/7).',
       tailoredCardTitle: 'الجلسات تحدد حسب الحالة واحتياج الجسم',
@@ -712,9 +487,9 @@ export const translations = {
           desc: 'اختيار التقنية المناسبة بناءً على طبيعة المجهود وحالة العضلات والمفاصل.',
         },
         {
-          title: 'تنوع الأساليب',
-          label: 'تقليدية وحديثة',
-          desc: 'من التدليك الرياضي والكيروبراكتك إلى الأيورفيدا والحمام المغربي.',
+          title: 'تخصص في العضلات والمفاصل',
+          label: 'تقنيات مركّزة',
+          desc: 'تدليك رياضي، سيتاتشو عميق للعضلات والمفاصل، براكتك رياضي، وكاسات نارية وهواء.',
         },
         {
           title: 'بيئة مريحة',
@@ -724,17 +499,16 @@ export const translations = {
       ],
     },
     services: {
-      eyebrow: 'قائمة الخدمات المتكاملة',
+      eyebrow: 'قائمة الخدمات المتخصصة',
       title: 'خدمات العناية والتدليك الصحي',
       sloganBadge: siteConfig.brand.posterSloganAr,
       subtitle:
-        'نقدّم 17 خدمة متخصصة تغطي التدليك العضلي والعناية اليدوية، الكاسات والإبر الصينية، العناية بالبشرة والسبا، والتمارين الحركية.',
+        'نقدّم 8 خدمات أساسية متخصصة تركز على التدليك، التدليك الرياضي، كاسات النارية وكاسات الهواء، سيتاتشو التدليك العميق للعضلات والمفاصل، البراكتك الرياضي، الرفلكسولوجي والعناية بالقدمين.',
       categories: {
-        all: 'جميع الخدمات (17)',
-        massage: 'التدليك والعلاج اليدوي',
-        cupping: 'الكاسات والإبر الصينية',
-        spa: 'العناية بالجسم والسبا',
-        fitness: 'التمارين واللياقة',
+        all: 'جميع الخدمات (8)',
+        massage: 'التدليك والشياتسو والبراكتك',
+        cupping: 'كاسات النارية وكاسات الهواء',
+        foot: 'الرفلكسولوجي والعناية بالقدمين',
       },
       cardFlipHint: 'التفاصيل',
       cardBackBtn: 'عودة',
@@ -782,15 +556,12 @@ export const translations = {
     },
     benefits: {
       eyebrow: 'التوعية الصحية وفوائد العناية',
-      title: 'فوائد التدليك والحمام المغربي للجسم والبشرة',
+      title: 'فوائد التدليك الصحي والعناية بالعضلات والمفاصل',
       subtitle:
-        'تعرّف على الفوائد المتعددة لجلسات التدليك الصحي والحمام المغربي الأصيل كما يقدّمها مركز ترو سيرف.',
-      tabMassage: 'فوائد التدليك (15 فائدة)',
-      tabMoroccan: 'فوائد الحمام المغربي (9 فوائد)',
+        'تعرّف على الفوائد المتعددة لجلسات التدليك الصحي والعناية العضلية المتخصصة كما يقدّمها مركز ترو سيرف.',
+      tabMassage: 'فوائد التدليك الصحي (15 فائدة)',
       massagePosterTitle: 'فوائد التدليك الصحي',
-      MassagePosterSub: 'عناية متكاملة لراحة العضلات، تنشيط الدورة الدموية، وصفاء الذهن.',
-      moroccanPosterTitle: 'فوائد الحمام المغربي',
-      MoroccanPosterSub: 'تنظيف عميق بالبخار والصابون المغربي لتجديد البشرة وتهدئة الأعصاب.',
+      MassagePosterSub: 'عناية متكاملة لراحة العضلات والمفاصل، تنشيط الدورة الدموية، وصفاء الذهن.',
       disclaimerTitle: 'ملاحظة توعوية هامة',
       disclaimerText:
         'النتائج تختلف من شخص لآخر، والجلسات تُحدد حسب الحالة واحتياج الجسم. هذه المعلومات للتوعية ولا تغني عن استشارة الطبيب.',
@@ -812,7 +583,7 @@ export const translations = {
       eyebrow: 'لماذا تختار ترو سيرف؟',
       title: 'معايير عناية تضع راحتك وتوازنك في المقام الأول',
       subtitle:
-        'نحرص في مركز ترو سيرف للتدليك الصحي على تقديم تجربة متكاملة تجمع بين التخصيص، التنوع، والبيئة الهادئة.',
+        'نحرص في مركز ترو سيرف للتدليك الصحي على تقديم تجربة متكاملة تجمع بين التخصيص، التركيز العضلي والحركي، والبيئة الهادئة.',
       cards: [
         {
           title: 'جلسات مخصصة',
@@ -821,9 +592,9 @@ export const translations = {
           icon: 'sliders',
         },
         {
-          title: 'تنوع العلاجات',
-          subtitle: '17 خدمة تحت سقف واحد',
-          desc: 'من التدليك الرياضي والشياتسو والكيروبراكتك إلى الكاسات النارية والإبر الصينية والحمام المغربي.',
+          title: 'تخصص دقيق',
+          subtitle: '8 خدمات أساسية متكاملة',
+          desc: 'تدليك، تدليك رياضي، كاسات نارية وكاسات هواء، سيتاتشو تدليك عميق للعضلات والمفاصل، براكتك رياضي، رفلكسولوجي وعناية بالقدمين.',
           icon: 'layers',
         },
         {
@@ -934,7 +705,7 @@ export const translations = {
       headlinePart1: 'Your Health. Your Balance.',
       headlinePart2: 'Your Body Deserves Care.',
       subtitle:
-        'Your dedicated destination for therapeutic massage and holistic bodywork in Riyadh. Every session is thoughtfully tailored to your condition and body need in a serene, luxurious setting.',
+        'Your dedicated destination for therapeutic massage and specialized muscle & joint care in Riyadh. Every session is thoughtfully tailored to your condition and body need in a serene, luxurious setting.',
       posterSlogan: siteConfig.brand.posterSloganEn,
       primaryCta: 'Book via WhatsApp',
       secondaryCta: 'Explore Services',
@@ -945,8 +716,8 @@ export const translations = {
           desc: 'Customized to your condition & body need',
         },
         {
-          title: '17 Wellness Therapies',
-          desc: 'Massage, cupping, acupuncture & Moroccan bath',
+          title: '8 Specialized Therapies',
+          desc: 'Massage, fire & air cupping, shiatsu, reflexology & foot care',
         },
         {
           title: 'Open Always 24/7',
@@ -961,7 +732,7 @@ export const translations = {
       title: 'A Serene Sanctuary Blending Specialized Care with Refined Luxury',
       lead: 'At True Serve Therapeutic Massage in Dhahrat Laban District, Riyadh, we believe every body has unique needs. Rather than one-size-fits-all routines, each session is tailored to your condition.',
       paragraph1:
-        'Our center brings together sports and therapeutic massage, fire cupping, sliding cupping, Chinese acupuncture, sports shiatsu, chiropractic care, and joint mobilization alongside restorative spa rituals including the traditional Moroccan bath, hot stone massage, and Ayurveda.',
+        'Our center focuses on therapeutic and sports massage, fire cupping and air cupping, deep muscle & joint shiatsu, sports practice & joint care, reflexology, and dedicated foot care.',
       paragraph2:
         'Every detail of our reception lounges and therapy suites has been crafted to inspire calm, privacy, and trust from the moment you arrive — open 24 hours a day, 7 days a week.',
       tailoredCardTitle: 'Sessions are tailored to each condition and body need',
@@ -977,9 +748,9 @@ export const translations = {
           desc: 'Selecting the right modality based on your physical activity and muscle or joint condition.',
         },
         {
-          title: 'Diverse Modalities',
-          label: 'Traditional & Modern',
-          desc: 'From sports massage and joint care to acupuncture, cupping, and Moroccan bath.',
+          title: 'Muscle & Joint Focus',
+          label: 'Targeted Modalities',
+          desc: 'Sports massage, deep muscle & joint shiatsu, sports practice, fire cupping, and air cupping.',
         },
         {
           title: 'Refined Atmosphere',
@@ -989,17 +760,16 @@ export const translations = {
       ],
     },
     services: {
-      eyebrow: 'Comprehensive Service Menu',
+      eyebrow: 'Specialized Service Menu',
       title: 'Therapeutic Massage & Wellness Services',
       sloganBadge: siteConfig.brand.posterSloganEn,
       subtitle:
-        'Discover all 17 specialized services spanning manual and sports massage, thermal and gliding cupping, acupuncture, Moroccan bath, and guided mobility.',
+        'Discover our 8 focused therapies: Therapeutic Massage, Fire Cupping, Air Cupping, Sports Massage, Reflexology, Foot Care, Sports Practice, and Deep Muscle & Joint Shiatsu.',
       categories: {
-        all: 'All Services (17)',
-        massage: 'Massage & Manual Therapy',
-        cupping: 'Cupping & Acupuncture',
-        spa: 'Body Care & Spa',
-        fitness: 'Exercise & Fitness',
+        all: 'All Services (8)',
+        massage: 'Massage, Shiatsu & Practice',
+        cupping: 'Fire & Air Cupping',
+        foot: 'Reflexology & Foot Care',
       },
       cardFlipHint: 'Details',
       cardBackBtn: 'Back',
@@ -1047,15 +817,12 @@ export const translations = {
     },
     benefits: {
       eyebrow: 'Wellness Awareness & Benefits',
-      title: 'Benefits of Therapeutic Massage & Moroccan Bath',
+      title: 'Benefits of Therapeutic Massage & Muscle Care',
       subtitle:
-        'Explore the traditional and restorative benefits of regular massage therapy and authentic Moroccan bath rituals.',
+        'Explore the restorative benefits of regular therapeutic massage and targeted muscle and joint care at True Serve.',
       tabMassage: 'Massage Benefits (15 Items)',
-      tabMoroccan: 'Moroccan Bath Benefits (9 Items)',
       massagePosterTitle: 'Therapeutic Massage Benefits',
-      MassagePosterSub: 'Holistic care for muscular relief, healthy circulation, and mental calm.',
-      moroccanPosterTitle: 'Moroccan Bath Benefits',
-      MoroccanPosterSub: 'Deep steam cleansing and exfoliation to revitalize skin and soothe tension.',
+      MassagePosterSub: 'Holistic care for muscular and joint relief, healthy circulation, and mental calm.',
       disclaimerTitle: 'Important Wellness & Medical Awareness Note',
       disclaimerText:
         'Results vary from person to person; sessions are tailored to each condition. This information is for awareness only and does not replace medical advice.',
@@ -1086,9 +853,9 @@ export const translations = {
           icon: 'sliders',
         },
         {
-          title: 'Wide Range of Therapies',
-          subtitle: '17 services under one roof',
-          desc: 'From sports massage, shiatsu, and chiropractic care to fire cupping, acupuncture, and Moroccan bath.',
+          title: 'Focused Specialization',
+          subtitle: '8 core therapies under one roof',
+          desc: 'Therapeutic & sports massage, fire & air cupping, deep muscle & joint shiatsu, sports practice, reflexology & foot care.',
           icon: 'layers',
         },
         {

@@ -7,7 +7,6 @@ import { DynamicIcon } from '../components/ServiceIcon';
 
 export function Benefits() {
   const { lang, prefersReducedMotion, t } = useLang();
-  const [activeTab, setActiveTab] = useState('massage');
   const listRef = useRef(null);
 
   useEffect(() => {
@@ -27,31 +26,15 @@ export function Benefits() {
     }, listRef);
 
     return () => ctx.revert();
-  }, [activeTab, lang, prefersReducedMotion]);
+  }, [lang, prefersReducedMotion]);
 
-  const currentItems =
-    activeTab === 'massage' ? benefitsData.massage : benefitsData.moroccanBath;
+  const currentItems = benefitsData.massage;
 
-  const currentImage =
-    activeTab === 'massage'
-      ? {
-          webp: '/assets/services/massage-general.webp',
-          jpg: '/assets/services/massage-general.jpg',
-          title: t.benefits.massagePosterTitle,
-          sub: t.benefits.MassagePosterSub,
-        }
-      : {
-          webp: '/assets/services/moroccan-bath.webp',
-          jpg: '/assets/services/moroccan-bath.jpg',
-          title: t.benefits.moroccanPosterTitle,
-          sub: t.benefits.MoroccanPosterSub,
-        };
-
-  const handleKeyDown = (e) => {
-    if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
-      e.preventDefault();
-      setActiveTab((prev) => (prev === 'massage' ? 'moroccan' : 'massage'));
-    }
+  const currentImage = {
+    webp: '/assets/services/massage-general.webp',
+    jpg: '/assets/services/massage-general.jpg',
+    title: t.benefits.massagePosterTitle,
+    sub: t.benefits.MassagePosterSub,
   };
 
   return (
@@ -76,60 +59,20 @@ export function Benefits() {
           </p>
         </div>
 
-        {/* Accessible Dual Tabs */}
+        {/* Highlight Badge */}
         <div className="flex justify-center mb-10">
-          <div
-            role="tablist"
-            aria-label={t.benefits.title}
-            onKeyDown={handleKeyDown}
-            className="inline-flex flex-wrap justify-center gap-2 p-2 rounded-3xl glass-panel border border-[#C9A66B]/35 shadow-sm"
-          >
-            <button
-              id="tab-massage-benefits"
-              role="tab"
-              type="button"
-              aria-selected={activeTab === 'massage'}
-              aria-controls="panel-benefits"
-              tabIndex={activeTab === 'massage' ? 0 : -1}
-              onClick={() => setActiveTab('massage')}
-              className={`min-h-[48px] px-6 py-3 rounded-2xl text-sm sm:text-base font-extrabold transition-all duration-300 ${
-                activeTab === 'massage'
-                  ? 'bg-gradient-to-r from-[#0A5CBA] via-[#0288D1] to-[#0A8F4A] text-white shadow-glow'
-                  : 'text-slate-700 dark:text-slate-300 hover:bg-slate-200/50 dark:hover:bg-slate-800/50'
-              }`}
-            >
-              {t.benefits.tabMassage}
-            </button>
-
-            <button
-              id="tab-moroccan-benefits"
-              role="tab"
-              type="button"
-              aria-selected={activeTab === 'moroccan'}
-              aria-controls="panel-benefits"
-              tabIndex={activeTab === 'moroccan' ? 0 : -1}
-              onClick={() => setActiveTab('moroccan')}
-              className={`min-h-[48px] px-6 py-3 rounded-2xl text-sm sm:text-base font-extrabold transition-all duration-300 ${
-                activeTab === 'moroccan'
-                  ? 'bg-gradient-to-r from-[#0A8F4A] via-[#0288D1] to-[#C9A66B] text-white shadow-glow-green'
-                  : 'text-slate-700 dark:text-slate-300 hover:bg-slate-200/50 dark:hover:bg-slate-800/50'
-              }`}
-            >
-              {t.benefits.tabMoroccan}
-            </button>
+          <div className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-gradient-to-r from-[#0A5CBA] via-[#0288D1] to-[#0A8F4A] text-white text-sm sm:text-base font-extrabold shadow-glow">
+            <Sparkles className="w-4 h-4" />
+            <span>{t.benefits.tabMassage}</span>
           </div>
         </div>
 
-        {/* Tab Panel Content */}
+        {/* Benefits Content */}
         <div
           id="panel-benefits"
-          role="tabpanel"
-          aria-labelledby={
-            activeTab === 'massage' ? 'tab-massage-benefits' : 'tab-moroccan-benefits'
-          }
           className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start"
         >
-          {/* Visual Card Column (Cropped Photo from Benefits Poster) */}
+          {/* Visual Card Column */}
           <div className="lg:col-span-4 lg:sticky lg:top-28">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-2 border-[#C9A66B]/45 bg-slate-900 aspect-[4/5]">
               <picture>
@@ -148,8 +91,7 @@ export function Benefits() {
 
               <div className="absolute bottom-5 inset-x-5 text-start">
                 <span className="inline-block px-3 py-1 rounded-full bg-[#00C853]/25 border border-[#00C853]/50 text-emerald-200 text-xs font-bold mb-2 backdrop-blur-sm">
-                  {activeTab === 'massage' ? '15' : '9'}{' '}
-                  {lang === 'ar' ? 'فوائد صحية واسترخائية' : 'Key Wellness Benefits'}
+                  15 {lang === 'ar' ? 'فوائد صحية واسترخائية' : 'Key Wellness Benefits'}
                 </span>
                 <h3 className="text-xl font-extrabold text-white mb-1">{currentImage.title}</h3>
                 <p className="text-xs sm:text-sm text-slate-200 leading-relaxed">
@@ -166,7 +108,7 @@ export function Benefits() {
           >
             {currentItems.map((item, idx) => (
               <div
-                key={`${activeTab}-${idx}`}
+                key={`massage-${idx}`}
                 className="benefit-item glass-panel rounded-2xl p-4 sm:p-5 border border-[#C9A66B]/30 hover:border-[#0A8F4A]/60 dark:hover:border-[#00C853]/60 transition-all duration-200 flex items-start gap-3.5 text-start group"
               >
                 <div

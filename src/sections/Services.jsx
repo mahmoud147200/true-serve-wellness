@@ -5,7 +5,7 @@ import { servicesData } from '../i18n/translations';
 import { siteConfig, buildWhatsAppUrl } from '../config/site';
 import { DynamicIcon, ServiceArtwork } from '../components/ServiceIcon';
 
-const CATEGORIES = ['all', 'massage', 'cupping', 'spa', 'fitness'];
+const CATEGORIES = ['all', 'massage', 'cupping', 'foot'];
 
 function ServiceTiltCard({ service, lang, t, prefersReducedMotion, onSelectForForm }) {
   const [flipped, setFlipped] = useState(false);
