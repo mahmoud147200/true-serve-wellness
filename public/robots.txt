@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://truserve-wellness.sa/sitemap.xml
