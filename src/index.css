@@ -69,14 +69,20 @@
   }
 
   .brand-text-gradient {
-    background: linear-gradient(135deg, #0A5CBA 0%, #0288D1 45%, #0A8F4A 100%);
+    background: linear-gradient(135deg, #0A5CBA 0%, #0288D1 48%, #0A8F4A 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    display: inline-block;
+    padding-top: 0.12em;
+    padding-bottom: 0.22em;
+    line-height: 1.45;
   }
 
   .dark .brand-text-gradient {
-    background: linear-gradient(135deg, #38BDF8 0%, #00E676 60%, #DFC394 100%);
+    background: linear-gradient(135deg, #38BDF8 0%, #00E676 55%, #F3D69B 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 }

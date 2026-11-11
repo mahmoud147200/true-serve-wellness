@@ -181,7 +181,8 @@ export const servicesData = [
     number: '08',
     category: 'spa',
     featured: false,
-    image: null,
+    image: '/assets/services/ayurveda.webp',
+    imageFallback: '/assets/services/ayurveda.jpg',
     icon: 'leaf',
     title: {
       ar: 'أيورفيدا',
@@ -205,7 +206,8 @@ export const servicesData = [
     number: '09',
     category: 'massage',
     featured: false,
-    image: null,
+    image: '/assets/services/reflexology.webp',
+    imageFallback: '/assets/services/reflexology.jpg',
     icon: 'footprints',
     title: {
       ar: 'ريفلكسولوجي',
@@ -229,7 +231,8 @@ export const servicesData = [
     number: '10',
     category: 'massage',
     featured: false,
-    image: null,
+    image: '/assets/services/shiatsu.webp',
+    imageFallback: '/assets/services/shiatsu.jpg',
     icon: 'compass',
     title: {
       ar: 'سيتاتشو',
@@ -253,7 +256,8 @@ export const servicesData = [
     number: '11',
     category: 'cupping',
     featured: false,
-    image: null,
+    image: '/assets/services/cupping.webp',
+    imageFallback: '/assets/services/cupping.jpg',
     icon: 'circle-dot',
     title: {
       ar: 'كاسات',
@@ -277,7 +281,8 @@ export const servicesData = [
     number: '12',
     category: 'massage',
     featured: false,
-    image: null,
+    image: '/assets/services/chiropractic.webp',
+    imageFallback: '/assets/services/chiropractic.jpg',
     icon: 'align-center',
     title: {
       ar: 'الكيروبراكتك',
@@ -301,7 +306,8 @@ export const servicesData = [
     number: '13',
     category: 'spa',
     featured: false,
-    image: null,
+    image: '/assets/services/foot-care.webp',
+    imageFallback: '/assets/services/foot-care.jpg',
     icon: 'feather',
     title: {
       ar: 'العناية بالقدمين',
@@ -325,7 +331,8 @@ export const servicesData = [
     number: '14',
     category: 'spa',
     featured: false,
-    image: null,
+    image: '/assets/services/hot-stones.webp',
+    imageFallback: '/assets/services/hot-stones.jpg',
     icon: 'gem',
     title: {
       ar: 'أحجار ساخنة',
@@ -349,7 +356,8 @@ export const servicesData = [
     number: '15',
     category: 'fitness',
     featured: false,
-    image: null,
+    image: '/assets/services/exercises.webp',
+    imageFallback: '/assets/services/exercises.jpg',
     icon: 'stretch-horizontal',
     title: {
       ar: 'تمارين',
@@ -373,7 +381,8 @@ export const servicesData = [
     number: '16',
     category: 'fitness',
     featured: false,
-    image: null,
+    image: '/assets/services/fitness.webp',
+    imageFallback: '/assets/services/fitness.jpg',
     icon: 'dumbbell',
     title: {
       ar: 'لياقة',
@@ -383,13 +392,13 @@ export const servicesData = [
       ar: 'برامج تنشيط بدني متوازنة لدعم الحيوية والنشاط العام للجسم.',
       en: 'Balanced physical conditioning sessions to support overall vitality and wellness.',
     },
-    details: {
-      ar: 'جلسات نشاط بدني مدروسة تهدف إلى تعزيز اللياقة العامة وتنشيط الدورة الدموية ودعم التوازن الحركي بما يتناسب مع الحالة البدنية لكل زائر.',
-      en: 'Thoughtfully paced conditioning sessions aimed at boosting general vitality, circulation, and physical balance in accordance with your condition.',
-    },
     tags: {
       ar: ['تنشيط بدني', 'حيوية الجسم', 'توازن حركي'],
       en: ['Physical Vitality', 'Conditioning', 'Active Balance'],
+    },
+    details: {
+      ar: 'جلسات نشاط بدني مدروسة تهدف إلى تعزيز اللياقة العامة وتنشيط الدورة الدموية ودعم التوازن الحركي بما يتناسب مع الحالة البدنية لكل زائر.',
+      en: 'Thoughtfully paced conditioning sessions aimed at boosting general vitality, circulation, and physical balance in accordance with your condition.',
     },
   },
   {

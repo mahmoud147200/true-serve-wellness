@@ -58,7 +58,7 @@ export function Hero() {
     <section
       id="home"
       ref={sectionRef}
-      className="relative min-h-screen flex items-center pt-32 pb-16 sm:pt-36 sm:pb-20 overflow-hidden bg-gradient-to-b from-[#F5EFE6] via-[#FBF9F5] to-[#F4EFE6] dark:from-[#040B16] dark:via-[#06101E] dark:to-[#0A192F]"
+      className="relative min-h-screen flex items-center pt-24 pb-14 sm:pt-28 sm:pb-18 overflow-hidden bg-gradient-to-b from-[#F5EFE6] via-[#FBF9F5] to-[#F4EFE6] dark:from-[#040B16] dark:via-[#06101E] dark:to-[#0A192F]"
     >
       {/* Ambient Radial Luxury Lighting */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
@@ -110,14 +110,14 @@ export function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
           {/* Primary Text Column */}
           <div className="lg:col-span-7 relative flex flex-col items-start text-start">
-            {/* Soft radial readability veil behind Hero text */}
+            {/* High-clarity readability backdrop behind Hero text */}
             <div
-              className="absolute -inset-6 rounded-[2.5rem] bg-[#FBF9F5]/65 dark:bg-[#06101E]/65 backdrop-blur-[3px] -z-10 pointer-events-none"
+              className="absolute -inset-6 rounded-[2.5rem] bg-[#FBF9F5]/88 dark:bg-[#06101E]/88 backdrop-blur-md -z-10 pointer-events-none border border-[#C9A66B]/20 shadow-sm"
               aria-hidden="true"
             />
             {/* Top Status Badges: Open Always 24/7 + Riyadh Location */}
-            <div className="hero-reveal flex flex-wrap items-center gap-2.5 mb-5">
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/12 dark:bg-emerald-500/20 border border-emerald-500/35 text-emerald-800 dark:text-emerald-300 text-xs sm:text-sm font-bold shadow-sm">
+            <div className="hero-reveal flex flex-wrap items-center gap-2.5 mb-4">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/15 dark:bg-emerald-500/20 border border-emerald-500/40 text-emerald-800 dark:text-emerald-300 text-xs sm:text-sm font-bold shadow-sm">
                 <span className="relative flex h-2.5 w-2.5">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00C853] opacity-75" />
                   <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#00C853]" />
@@ -142,14 +142,16 @@ export function Hero() {
               <span>{t.hero.eyebrow}</span>
             </p>
 
-            {/* Split-Text Reveal Headline */}
-            <h1 className="hero-reveal text-3xl sm:text-5xl xl:text-6xl font-extrabold text-slate-900 dark:text-white leading-[1.28] sm:leading-[1.22] mb-5">
-              <span className="block mb-1">{t.hero.headlinePart1}</span>
-              <span className="brand-text-gradient block">{t.hero.headlinePart2}</span>
+            {/* Split-Text Reveal Headline with generous line-height & descender padding */}
+            <h1 className="hero-reveal text-3xl sm:text-5xl xl:text-[3.4rem] font-extrabold text-slate-900 dark:text-white leading-[1.5] sm:leading-[1.48] mb-4">
+              <span className="block mb-1 leading-[1.4]">{t.hero.headlinePart1}</span>
+              <span className="brand-text-gradient block py-1.5 pb-2.5 leading-[1.55] drop-shadow-sm">
+                {t.hero.headlinePart2}
+              </span>
             </h1>
 
             {/* Subtitle */}
-            <p className="hero-reveal text-base sm:text-lg text-slate-700 dark:text-slate-300 max-w-2xl mb-6 leading-relaxed">
+            <p className="hero-reveal text-base sm:text-lg font-medium text-slate-800 dark:text-slate-100 max-w-2xl mb-6 leading-[1.85]">
               {t.hero.subtitle}
             </p>
 
